@@ -1,0 +1,99 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 2rem;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  
+  body.light {
+    background-color: #fffaf3;
+    color: #333;
+  }
+  
+  body.dark {
+    background-color: #0d1b2a;
+    color: #f0f8ff;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    padding: 0.6rem;
+    margin: 0.5rem;
+    width: 200px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 0.8rem 1.4rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #ffbf00;
+    color: #000;
+    font-weight: bold;
+    margin: 1rem 0;
+    transition: transform 0.3s ease;
+  }
+  
+  button:hover {
+    animation: uplift 0.4s ease-in-out;
+  }
+  
+  .goal-input {
+    margin-bottom: 2rem;
+  }
+  
+  .tracker {
+    margin-top: 1.5rem;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+    margin-top: 10px;
+  }
+  
+  #progress-fill {
+    height: 100%;
+    width: 0%;
+    background-color: #28a745;
+    transition: width 0.6s ease-in-out;
+  }
+  
+  @keyframes uplift {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.12) translateY(-4px); }
+    100% { transform: scale(1); }
+  }
+  
+  .fade-in {
+    animation: fadeInUp 1s ease forwards;
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  

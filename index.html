@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Goals & Ambitions</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Achieve Your Dreams</h1>
+    <p>Define your goal and track your progress toward success.</p>
+
+    <div class="goal-input">
+      <input type="text" id="goal" placeholder="Enter your goal..." />
+      <input type="number" id="progress" placeholder="Progress %" min="0" max="100" />
+      <button id="save-goal">Save Goal</button>
+    </div>
+
+    <div class="tracker">
+      <h2 id="goal-text">No goal set yet.</h2>
+      <div class="progress-bar">
+        <div id="progress-fill"></div>
+      </div>
+    </div>
+
+    <button id="toggle-theme">Switch Focus Mode</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
